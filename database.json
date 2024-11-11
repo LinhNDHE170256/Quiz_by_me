@@ -1,0 +1,1731 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "How are dimensions represented in React Native?",
+            "options": [
+                "Inches",
+                "Pixels",
+                "Density-independent pixels",
+                "Centimeters"
+            ],
+            "answer": "Density-independent pixels"
+        },
+        {
+            "id": 2,
+            "question": "Which axis is referred to as the cross axis in Flexbox layout?",
+            "options": [
+                "Main axis",
+                "Perpendicular to main axis",
+                "Diagonal axis",
+                "Horizontal axis"
+            ],
+            "answer": "Perpendicular to main axis"
+        },
+        {
+            "id": 3,
+            "question": "Which hook is typically used to store the text value in a TextInput?",
+            "options": [
+                "useEffect",
+                "useMemo",
+                "useState",
+                "useRef"
+            ],
+            "answer": "useState"
+        },
+        {
+            "id": 4,
+            "question": "How does column-reverse arrange children?",
+            "options": [
+                "Bottom to top",
+                "Left to right",
+                "Right to left",
+                "Top to bottom"
+            ],
+            "answer": "Bottom to top"
+        },
+        {
+            "id": 5,
+            "question": "What does the SafeAreaView component in React Native ensure?",
+            "options": [
+                "That views cover the entire screen",
+                "That views are within safe area bounds",
+                "That all images are displayed",
+                "That text is responsive"
+            ],
+            "answer": "That views are within safe area bounds"
+        },
+        {
+            "id": 6,
+            "question": "What is the prop name used for styling in React Native components?",
+            "options": [
+                "color",
+                "text",
+                "style",
+                "width"
+            ],
+            "answer": "style"
+        },
+        {
+            "id": 7,
+            "question": "What is a key feature of SectionList in React Native?",
+            "options": [
+                "Uses FlatList internally",
+                "Supports section headers",
+                "Does not support custom rendering",
+                "Renders only text content"
+            ],
+            "answer": "Supports section headers"
+        },
+        {
+            "id": 8,
+            "question": "Which component provides touch feedback on Android?",
+            "options": [
+                "TouchableNativeFeedback",
+                "FlatList",
+                "ScrollView",
+                "Button"
+            ],
+            "answer": "TouchableNativeFeedback"
+        },
+        {
+            "id": 9,
+            "question": "What is the role of onValueChange in Switch?",
+            "options": [
+                "Updates the state",
+                "Triggers textInput",
+                "Updates the value prop",
+                "Changes the color"
+            ],
+            "answer": "Updates the state"
+        },
+        {
+            "id": 10,
+            "question": "What does SectionList require for each section?",
+            "options": [
+                "A unique key",
+                "An onPress function",
+                "A ScrollView",
+                "A renderImage prop"
+            ],
+            "answer": "A unique key"
+        },
+        {
+            "id": 11,
+            "question": "Which component is used for input above the keyboard in iOS?",
+            "options": [
+                "Text",
+                "SafeAreaView",
+                "InputAccessoryView",
+                "Image"
+            ],
+            "answer": "InputAccessoryView"
+        },
+        {
+            "id": 12,
+            "question": "What is the purpose of the keyExtractor function in FlatList?",
+            "options": [
+                "To extract the key from the UI",
+                "To provide a unique key for each item",
+                "To render items",
+                "To update the view"
+            ],
+            "answer": "To provide a unique key for each item"
+        },
+        {
+            "id": 13,
+            "question": "How do you specify another way to find/build the key in FlatList?",
+            "options": [
+                "Set renderItem",
+                "Use keyExtractor",
+                "Modify onPress",
+                "Update the state"
+            ],
+            "answer": "Use keyExtractor"
+        },
+        {
+            "id": 14,
+            "question": "Which method is commonly used to set a fixed size for components?",
+            "options": [
+                "Padding",
+                "Flex",
+                "Fixed dimensions",
+                "Relative layout"
+            ],
+            "answer": "Fixed dimensions"
+        },
+        {
+            "id": 15,
+            "question": "What is the most basic building block of a React Native app?",
+            "options": [
+                "Text",
+                "View",
+                "Image",
+                "Button"
+            ],
+            "answer": "View"
+        },
+        {
+            "id": 16,
+            "question": "Which component is used to render text in React Native?",
+            "options": [
+                "Button",
+                "Image",
+                "View",
+                "Text"
+            ],
+            "answer": "Text"
+        },
+        {
+            "id": 17,
+            "question": "What does flexShrink: 0 do?",
+            "options": [
+                "Prevents shrinking",
+                "Allows shrinking",
+                "Maximizes flex size",
+                "Ignores flex properties"
+            ],
+            "answer": "Prevents shrinking"
+        },
+        {
+            "id": 18,
+            "question": "What does the flex direction 'row' do in React Native?",
+            "options": [
+                "Aligns children top to bottom",
+                "Aligns children left to right",
+                "Aligns children bottom to top",
+                "Aligns children center"
+            ],
+            "answer": "Aligns children left to right"
+        },
+        {
+            "id": 19,
+            "question": "What is required to display images from the web in React Native?",
+            "options": [
+                "Set dimensions or flex style",
+                "Set the color prop",
+                "Apply border-radius",
+                "Set the font size"
+            ],
+            "answer": "Set dimensions or flex style"
+        },
+        {
+            "id": 20,
+            "question": "Which API is used for styling in React Native?",
+            "options": [
+                "Image",
+                "StyleSheet",
+                "Text",
+                "View"
+            ],
+            "answer": "StyleSheet"
+        },
+        {
+            "id": 21,
+            "question": "How are new screens displayed by default on iOS with Stack Navigator?",
+            "options": [
+                "Slide in from left",
+                "Fade in",
+                "Slide in from right",
+                "Pop up"
+            ],
+            "answer": "Slide in from right"
+        },
+        {
+            "id": 22,
+            "question": "What is the web equivalent of the React Native View component?",
+            "options": [
+                "<span>",
+                "<div>",
+                "<p>",
+                "<section>"
+            ],
+            "answer": "<div>"
+        },
+        {
+            "id": 23,
+            "question": "How do you style your application in React Native?",
+            "options": [
+                "Using HTML",
+                "Using CSS",
+                "Using JavaScript",
+                "Using SQL"
+            ],
+            "answer": "Using JavaScript"
+        },
+        {
+            "id": 24,
+            "question": "Which component is specifically used to render content above the iOS keyboard?",
+            "options": [
+                "SafeAreaView",
+                "InputAccessoryView",
+                "Text",
+                "Button"
+            ],
+            "answer": "InputAccessoryView"
+        },
+        {
+            "id": 25,
+            "question": "What does the InputAccessoryView component wrap?",
+            "options": [
+                "The keyboard",
+                "A TextInput",
+                "Custom toolbar",
+                "FlatList"
+            ],
+            "answer": "Custom toolbar"
+        },
+        {
+            "id": 26,
+            "question": "How are style names written in React Native?",
+            "options": [
+                "Camel case",
+                "Snake case",
+                "Kebab case",
+                "Uppercase"
+            ],
+            "answer": "Camel case"
+        },
+        {
+            "id": 27,
+            "question": "What is the key use of the SafeAreaView in iOS?",
+            "options": [
+                "Handles scrolling",
+                "Applies padding for safe areas",
+                "Enables keyboard input",
+                "Renders text"
+            ],
+            "answer": "Applies padding for safe areas"
+        },
+        {
+            "id": 28,
+            "question": "Which component is used for navigation in React Native?",
+            "options": [
+                "Button",
+                "Switch",
+                "Navigator",
+                "View"
+            ],
+            "answer": "Navigator"
+        },
+        {
+            "id": 29,
+            "question": "What happens when you pass an array to the style prop?",
+            "options": [
+                "First item overrides others",
+                "Last item overrides previous ones",
+                "Styles are merged equally",
+                "Styles are ignored"
+            ],
+            "answer": "Last item overrides previous ones"
+        },
+        {
+            "id": 30,
+            "question": "How can a component expand based on available space?",
+            "options": [
+                "Using height property",
+                "Using width property",
+                "Using flex property",
+                "Using margin"
+            ],
+            "answer": "Using flex property"
+        },
+        {
+            "id": 31,
+            "question": "Which prop is used to control the value of a TextInput?",
+            "options": [
+                "onPress",
+                "onChangeText",
+                "renderItem",
+                "keyExtractor"
+            ],
+            "answer": "onChangeText"
+        },
+        {
+            "id": 32,
+            "question": "What does the renderItem function do in a FlatList?",
+            "options": [
+                "Modifies the FlatList layout",
+                "Renders each item from the data",
+                "Adds text styles",
+                "Updates the image dimensions"
+            ],
+            "answer": "Renders each item from the data"
+        },
+        {
+            "id": 33,
+            "question": "What is the main axis in Flexbox layout?",
+            "options": [
+                "Vertical",
+                "Diagonal",
+                "Horizontal",
+                "Depends on flexDirection"
+            ],
+            "answer": "Depends on flexDirection"
+        },
+        {
+            "id": 34,
+            "question": "Which platform supports the TouchableNativeFeedback component?",
+            "options": [
+                "iOS",
+                "Android",
+                "Web",
+                "Windows"
+            ],
+            "answer": "Android"
+        },
+        {
+            "id": 35,
+            "question": "What does the flex: 1 style in SafeAreaView ensure?",
+            "options": [
+                "Fills the screen horizontally",
+                "Aligns items to the left",
+                "Fills the available screen space",
+                "Makes the text bold"
+            ],
+            "answer": "Fills the available screen space"
+        },
+        {
+            "id": 36,
+            "question": "How does DrawerLayoutAndroid open the navigation drawer?",
+            "options": [
+                "By dragging the drawer",
+                "By pressing a button",
+                "By setting a timeout",
+                "By applying a flex layout"
+            ],
+            "answer": "By dragging the drawer"
+        },
+        {
+            "id": 37,
+            "question": "What does flex: 1 do in a component?",
+            "options": [
+                "Shrinks the component",
+                "Fills all available space",
+                "Reduces the height",
+                "Changes the background color"
+            ],
+            "answer": "Fills all available space"
+        },
+        {
+            "id": 38,
+            "question": "How are section headers rendered in SectionList?",
+            "options": [
+                "Using renderItem prop",
+                "Using renderSectionHeader prop",
+                "With keyExtractor",
+                "With onChangeText"
+            ],
+            "answer": "Using renderSectionHeader prop"
+        },
+        {
+            "id": 39,
+            "question": "What component is used to handle user input from a keyboard in React Native?",
+            "options": [
+                "Text",
+                "TextInput",
+                "FlatList",
+                "ScrollView"
+            ],
+            "answer": "TextInput"
+        },
+        {
+            "id": 40,
+            "question": "How do you make an image appear in React Native when using a URL source?",
+            "options": [
+                "Set the uri prop",
+                "Apply a width and height",
+                "Pass an image prop",
+                "Use onClick"
+            ],
+            "answer": "Apply a width and height"
+        },
+        {
+            "id": 41,
+            "question": "Which component supports section headers in React Native?",
+            "options": [
+                "Button",
+                "SectionList",
+                "View",
+                "TextInput"
+            ],
+            "answer": "SectionList"
+        },
+        {
+            "id": 42,
+            "question": "What property of the Button component makes it standard across platforms?",
+            "options": [
+                "textAlign",
+                "borderWidth",
+                "default style for native platform",
+                "backgroundColor"
+            ],
+            "answer": "default style for native platform"
+        },
+        {
+            "id": 43,
+            "question": "Which layout algorithm is used in React Native to arrange children?",
+            "options": [
+                "CSS Grid",
+                "Flexbox",
+                "Float",
+                "Block"
+            ],
+            "answer": "Flexbox"
+        },
+        {
+            "id": 44,
+            "question": "Which platform uses UIView as an abstraction layer for View in React Native?",
+            "options": [
+                "Android",
+                "iOS",
+                "Web",
+                "Windows"
+            ],
+            "answer": "iOS"
+        },
+        {
+            "id": 45,
+            "question": "How is the DrawerLayoutAndroid's width configured?",
+            "options": [
+                "By setting drawerWidth prop",
+                "With flexDirection",
+                "Using renderItem",
+                "With padding"
+            ],
+            "answer": "By setting drawerWidth prop"
+        },
+        {
+            "id": 46,
+            "question": "What is the recommended component for large quantities of scrollable content?",
+            "options": [
+                "ScrollView",
+                "Button",
+                "FlatList",
+                "Text"
+            ],
+            "answer": "FlatList"
+        },
+        {
+            "id": 47,
+            "question": "Which component can render large amounts of scrollable data efficiently?",
+            "options": [
+                "ScrollView",
+                "Button",
+                "FlatList",
+                "Text"
+            ],
+            "answer": "FlatList"
+        },
+        {
+            "id": 48,
+            "question": "What is the function of the Marker component in react-native-maps?",
+            "options": [
+                "Displays a map",
+                "Displays a location marker",
+                "Calculates the distance",
+                "Finds the nearest POI"
+            ],
+            "answer": "Displays a location marker"
+        },
+        {
+            "id": 49,
+            "question": "Which of the following is a valid map type in react-native-maps?",
+            "options": [
+                "hybrid",
+                "text",
+                "icon",
+                "image"
+            ],
+            "answer": "hybrid"
+        },
+        {
+            "id": 50,
+            "question": "What is an API platform?",
+            "options": [
+                "A cloud storage system",
+                "A tool to manage APIs",
+                "A mobile app development tool",
+                "A database management system"
+            ],
+            "answer": "A tool to manage APIs"
+        },
+        {
+            "id": 51,
+            "question": "How do you open the map app on a mobile device using react-native-maps?",
+            "options": [
+                "Import and use MapView",
+                "Import and use AppView",
+                "Import and use CameraView",
+                "Import and use ImageView"
+            ],
+            "answer": "Import and use MapView"
+        },
+        {
+            "id": 52,
+            "question": "What button initiates the Image Picker in React Native?",
+            "options": [
+                "Select Image",
+                "Upload Image",
+                "Choose Image",
+                "Select File"
+            ],
+            "answer": "Choose Image"
+        },
+        {
+            "id": 53,
+            "question": "What is required to access a user’s image and camera in React Native?",
+            "options": [
+                "Install react-native-image-picker",
+                "Install react-native-geolocation",
+                "Install react-native-fs",
+                "Install react-native-map"
+            ],
+            "answer": "Install react-native-image-picker"
+        },
+        {
+            "id": 54,
+            "question": "What does flexGrow control in Flexbox layout?",
+            "options": [
+                "Maximum size",
+                "Minimum size",
+                "Ability to grow",
+                "Ability to shrink"
+            ],
+            "answer": "Ability to grow"
+        },
+        {
+            "id": 55,
+            "question": "How do you specify the direction in which text is laid out in React Native?",
+            "options": [
+                "textAlign",
+                "layoutDirection",
+                "justifyContent",
+                "alignItems"
+            ],
+            "answer": "layoutDirection"
+        },
+        {
+            "id": 56,
+            "question": "What must the Geolocation API request to access location data?",
+            "options": [
+                "Username and password",
+                "User's permission",
+                "Device restart",
+                "App update"
+            ],
+            "answer": "User's permission"
+        },
+        {
+            "id": 57,
+            "question": "Which method does the Geolocation API use to get location data?",
+            "options": [
+                "GPS, Wi-Fi, IP Geolocation",
+                "Bluetooth",
+                "Fingerprint scanning",
+                "Face recognition"
+            ],
+            "answer": "GPS, Wi-Fi, IP Geolocation"
+        },
+        {
+            "id": 58,
+            "question": "What does the react-native-maps library provide?",
+            "options": [
+                "A component to create text inputs",
+                "A way to access the device's location",
+                "A method to display maps",
+                "A camera component"
+            ],
+            "answer": "A method to display maps"
+        },
+        {
+            "id": 59,
+            "question": "How can you control the space between lines in Flexbox?",
+            "options": [
+                "Using lineHeight",
+                "Using alignContent",
+                "Using flexGrow",
+                "Using justifyContent"
+            ],
+            "answer": "Using lineHeight"
+        },
+        {
+            "id": 60,
+            "question": "Which command installs react-native-maps?",
+            "options": [
+                "npm install react-native-fs",
+                "npm install react-native-maps",
+                "npm install react-native-location",
+                "npm install react-native-image-picker"
+            ],
+            "answer": "npm install react-native-maps"
+        },
+        {
+            "id": 61,
+            "question": "How do you align children at the center of a container in Flexbox?",
+            "options": [
+                "Using alignItems",
+                "Using justifyContent",
+                "Using margin",
+                "Using padding"
+            ],
+            "answer": "Using alignItems"
+        },
+        {
+            "id": 62,
+            "question": "What option does the Image Picker provide for selecting images?",
+            "options": [
+                "Choose from Camera Roll",
+                "Select from Contacts",
+                "Record Audio",
+                "Open Local Files"
+            ],
+            "answer": "Choose from Camera Roll"
+        },
+        {
+            "id": 63,
+            "question": "What does an API platform help manage?",
+            "options": [
+                "API security only",
+                "API lifecycle",
+                "API consumers only",
+                "Database configuration"
+            ],
+            "answer": "API lifecycle"
+        },
+        {
+            "id": 64,
+            "question": "Which prop controls the direction of layout in React Native?",
+            "options": [
+                "flexDirection",
+                "alignItems",
+                "justifyContent",
+                "flexWrap"
+            ],
+            "answer": "flexDirection"
+        },
+        {
+            "id": 65,
+            "question": "What must be included in the region prop for react-native-maps?",
+            "options": [
+                "Latitude and longitude only",
+                "Latitude, longitude, and address",
+                "Latitude, longitude, latitudeDelta, longitudeDelta",
+                "Zoom level and location accuracy"
+            ],
+            "answer": "Latitude, longitude, latitudeDelta, longitudeDelta"
+        },
+        {
+            "id": 66,
+            "question": "How does the Geolocation API improve privacy?",
+            "options": [
+                "By hiding the user's IP address",
+                "By requesting permission",
+                "By blocking third-party apps",
+                "By limiting location accuracy"
+            ],
+            "answer": "By requesting permission"
+        },
+        {
+            "id": 67,
+            "question": "How do you set the height of a component as a percentage of its parent?",
+            "options": [
+                "Use flex: 1",
+                "Use height: '50%'",
+                "Use flexBasis",
+                "Use alignItems"
+            ],
+            "answer": "Use height: '50%'"
+        },
+        {
+            "id": 68,
+            "question": "What happens when you use flexShrink: 1 in a component?",
+            "options": [
+                "Component cannot shrink",
+                "Component will shrink",
+                "Component grows",
+                "Component is fixed"
+            ],
+            "answer": "Component will shrink"
+        },
+        {
+            "id": 69,
+            "question": "What command is used to create a new project with Expo?",
+            "options": [
+                "expo init react-native-gmaps",
+                "npm install react-native",
+                "react-native run-android",
+                "expo start gmaps"
+            ],
+            "answer": "expo init react-native-gmaps"
+        },
+        {
+            "id": 70,
+            "question": "How do you control text and children alignment in React Native?",
+            "options": [
+                "Using flexDirection",
+                "Using alignContent",
+                "Using alignItems",
+                "Using justifyContent"
+            ],
+            "answer": "Using alignItems"
+        },
+        {
+            "id": 71,
+            "question": "Which plugin allows image picking directly from the camera?",
+            "options": [
+                "react-native-location",
+                "react-native-image-picker",
+                "react-native-maps",
+                "react-native-fs"
+            ],
+            "answer": "react-native-image-picker"
+        },
+        {
+            "id": 72,
+            "question": "Which property can the Geolocation API return?",
+            "options": [
+                "Longitude",
+                "Device battery level",
+                "Wi-Fi signal strength",
+                "Bluetooth status"
+            ],
+            "answer": "Longitude"
+        },
+        {
+            "id": 73,
+            "question": "How do you arrange items with equal space around them in Flexbox?",
+            "options": [
+                "Using space-between",
+                "Using space-around",
+                "Using alignItems",
+                "Using align-self"
+            ],
+            "answer": "Using space-around"
+        },
+        {
+            "id": 74,
+            "question": "What is the purpose of the alignItems prop in Flexbox?",
+            "options": [
+                "Aligns items vertically",
+                "Aligns items horizontally",
+                "Aligns items diagonally",
+                "Aligns items to the baseline"
+            ],
+            "answer": "Aligns items vertically"
+        },
+        {
+            "id": 75,
+            "question": "What does the Geolocation API provide access to?",
+            "options": [
+                "Internet connection",
+                "Device storage",
+                "Geographical location data",
+                "Device's contacts"
+            ],
+            "answer": "Geographical location data"
+        },
+        {
+            "id": 76,
+            "question": "How do you display a map in React Native using react-native-maps?",
+            "options": [
+                "Using MapView component",
+                "Using ImageView component",
+                "Using View component",
+                "Using LocationView component"
+            ],
+            "answer": "Using MapView component"
+        },
+        {
+            "id": 77,
+            "question": "How do you initiate the camera in React Native?",
+            "options": [
+                "Using Camera API",
+                "Using Image Picker",
+                "Using Expo CLI",
+                "Using react-native-location"
+            ],
+            "answer": "Using Image Picker"
+        },
+        {
+            "id": 78,
+            "question": "What is one customization option available in the Image Picker?",
+            "options": [
+                "Video editing",
+                "Take multiple photos simultaneously",
+                "Choose file quality",
+                "Choose screen size"
+            ],
+            "answer": "Choose file quality"
+        },
+        {
+            "id": 79,
+            "question": "What is used to control the size of the map in react-native-maps?",
+            "options": [
+                "Width and height props",
+                "flex props",
+                "region props",
+                "style props"
+            ],
+            "answer": "Width and height props"
+        },
+        {
+            "id": 80,
+            "question": "Where do you add permissions for Android to use the camera?",
+            "options": [
+                "package.json",
+                "settings.gradle",
+                "AndroidManifest.xml",
+                "MainActivity.java"
+            ],
+            "answer": "AndroidManifest.xml"
+        },
+        {
+            "id": 81,
+            "question": "How is react-native-maps different from a camera API?",
+            "options": [
+                "It shows maps instead of capturing photos",
+                "It only works on iOS",
+                "It uses a different method to access the camera",
+                "It supports all platforms"
+            ],
+            "answer": "It shows maps instead of capturing photos"
+        },
+        {
+            "id": 82,
+            "question": "What permission must be requested to access the camera in React Native on Android?",
+            "options": [
+                "ACCESS_FINE_LOCATION",
+                "READ_EXTERNAL_STORAGE",
+                "CAMERA",
+                "ACCESS_WIFI_STATE"
+            ],
+            "answer": "CAMERA"
+        },
+        {
+            "id": 83,
+            "question": "What media types can the Image Picker handle?",
+            "options": [
+                "Only photos",
+                "Only videos",
+                "Photos and videos",
+                "Only documents"
+            ],
+            "answer": "Photos and videos"
+        },
+        {
+            "id": 84,
+            "question": "What does alignItems: 'stretch' do in Flexbox?",
+            "options": [
+                "Stretches children horizontally",
+                "Stretches children vertically",
+                "Centers the children",
+                "Shrinks the children"
+            ],
+            "answer": "Stretches children vertically"
+        },
+        {
+            "id": 85,
+            "question": "What is a use case of the Geolocation API?",
+            "options": [
+                "Accessing photos from the library",
+                "Tracking a delivery vehicle",
+                "Blocking ads",
+                "Sending emails"
+            ],
+            "answer": "Tracking a delivery vehicle"
+        },
+        {
+            "id": 86,
+            "question": "What kind of permissions are added for accessing storage in Android?",
+            "options": [
+                "CAMERA",
+                "ACCESS_FINE_LOCATION",
+                "WRITE_EXTERNAL_STORAGE",
+                "ACCESS_WIFI_STATE"
+            ],
+            "answer": "WRITE_EXTERNAL_STORAGE"
+        },
+        {
+            "id": 87,
+            "question": "What library is used to integrate Google Maps in a React Native app?",
+            "options": [
+                "react-native-camera",
+                "react-native-fs",
+                "react-native-maps",
+                "react-native-file-system"
+            ],
+            "answer": "react-native-maps"
+        },
+        {
+            "id": 88,
+            "question": "What does RTL layout direction affect?",
+            "options": [
+                "Position of children",
+                "Background color",
+                "Width of components",
+                "Height of components"
+            ],
+            "answer": "Position of children"
+        },
+        {
+            "id": 89,
+            "question": "What does flexDirection: 'row-reverse' do?",
+            "options": [
+                "Aligns children top to bottom",
+                "Aligns children right to left",
+                "Aligns children bottom to top",
+                "Aligns children left to right"
+            ],
+            "answer": "Aligns children right to left"
+        },
+        {
+            "id": 90,
+            "question": "Which React Native plugin is used to access the image picker?",
+            "options": [
+                "react-native-camera",
+                "react-native-file-system",
+                "react-native-image-picker",
+                "react-native-clipboard"
+            ],
+            "answer": "react-native-image-picker"
+        },
+        {
+            "id": 91,
+            "question": "What does justifyContent control?",
+            "options": [
+                "Alignment of children",
+                "Wrapping of children",
+                "Size of the parent container",
+                "Text alignment"
+            ],
+            "answer": "Alignment of children"
+        },
+        {
+            "id": 92,
+            "question": "How do you align items along the cross axis in Flexbox?",
+            "options": [
+                "Using flexDirection",
+                "Using alignItems",
+                "Using justifyContent",
+                "Using margin"
+            ],
+            "answer": "Using alignItems"
+        },
+        {
+            "id": 93,
+            "question": "What is one use of the Geolocation API?",
+            "options": [
+                "Tagging photographs with location",
+                "Reading QR codes",
+                "Managing user data",
+                "Accessing local files"
+            ],
+            "answer": "Tagging photographs with location"
+        },
+        {
+            "id": 94,
+            "question": "What data is required in the region object for react-native-maps?",
+            "options": [
+                "Latitude and Longitude",
+                "LatitudeDelta and LongitudeDelta",
+                "All of the above",
+                "None of the above"
+            ],
+            "answer": "All of the above"
+        },
+        {
+            "id": 95,
+            "question": "Which command is used to install Expo CLI globally?",
+            "options": [
+                "npm install expo-cli --save",
+                "expo init my-project",
+                "npm start expo",
+                "npm install -g expo-cli"
+            ],
+            "answer": "npm install -g expo-cli"
+        },
+        {
+            "id": 96,
+            "question": "Which function can be used to show the user’s current location on a map?",
+            "options": [
+                "getLocation",
+                "showCurrentLocation",
+                "findCurrentPosition",
+                "Marker"
+            ],
+            "answer": "findCurrentPosition"
+        },
+        {
+            "id": 97,
+            "question": "What is the default layout direction in React Native?",
+            "options": [
+                "RTL",
+                "LTR",
+                "Center",
+                "Flex-start"
+            ],
+            "answer": "LTR"
+        },
+        {
+            "id": 98,
+            "question": "What prop is used to specify Google as the map provider in react-native-maps?",
+            "options": [
+                "style",
+                "provider",
+                "mapType",
+                "region"
+            ],
+            "answer": "provider"
+        },
+        {
+            "id": 99,
+            "question": "What does flexWrap: 'wrap' do in Flexbox?",
+            "options": [
+                "Wraps children to next line",
+                "Expands children",
+                "Aligns children to center",
+                "Shrinks children"
+            ],
+            "answer": "Wraps children to next line"
+        },
+        {
+            "id": 100,
+            "question": "Which file is modified to add permissions for using the camera in Android apps?",
+            "options": [
+                "package.json",
+                "AndroidManifest.xml",
+                "App.js",
+                "index.android.js"
+            ],
+            "answer": "AndroidManifest.xml"
+        },
+        {
+            "id": 101,
+            "question": "What does the prop 'mapType' define in react-native-maps?",
+            "options": [
+                "The zoom level",
+                "The type of map view",
+                "The provider for the map",
+                "The data source for markers"
+            ],
+            "answer": "The type of map view"
+        },
+        {
+            "id": 102,
+            "question": "What does layout direction 'RTL' stand for?",
+            "options": [
+                "Right-to-left",
+                "Right-to-long",
+                "Rotational layout",
+                "Relative-to-left"
+            ],
+            "answer": "Right-to-left"
+        },
+        {
+            "id": 103,
+            "question": "What is displayed in a map app when the region is properly defined?",
+            "options": [
+                "A blank screen",
+                "A Google map view",
+                "An error message",
+                "A list of locations"
+            ],
+            "answer": "A Google map view"
+        },
+        {
+            "id": 104,
+            "question": "What command is used to remove the default view module in a new Native Module?",
+            "options": [
+                "rm ios/ExpoSettingsView.swift",
+                "rm native/AppView.js",
+                "delete ios/ViewComponent",
+                "delete ios/SettingsView.js"
+            ],
+            "answer": "rm ios/ExpoSettingsView.swift"
+        },
+        {
+            "id": 105,
+            "question": "What method is used to store a string in Android Native Modules?",
+            "options": [
+                "putString()",
+                "getString()",
+                "saveData()",
+                "storeValue()"
+            ],
+            "answer": "putString()"
+        },
+        {
+            "id": 106,
+            "question": "Which event payload is emitted when the theme changes?",
+            "options": [
+                "{ layout: string }",
+                "{ theme: string }",
+                "{ style: string }",
+                "{ color: string }"
+            ],
+            "answer": "{ theme: string }"
+        },
+        {
+            "id": 107,
+            "question": "Which language is used for boilerplate code in a TypeScript Native Module?",
+            "options": [
+                "HTML",
+                "TypeScript",
+                "JavaScript",
+                "Swift"
+            ],
+            "answer": "TypeScript"
+        },
+        {
+            "id": 108,
+            "question": "What is included in the payload of a theme change event?",
+            "options": [
+                "{ theme: string }",
+                "{ color: string }",
+                "{ layout: string }",
+                "{ data: string }"
+            ],
+            "answer": "{ theme: string }"
+        },
+        {
+            "id": 109,
+            "question": "What method is used to set a theme preference in iOS Native Modules?",
+            "options": [
+                "UserDefaults.set(forKey:)",
+                "AsyncStorage.setTheme()",
+                "LocalStorage.save()",
+                "SharedPreferences.save()"
+            ],
+            "answer": "UserDefaults.set(forKey:)"
+        },
+        {
+            "id": 110,
+            "question": "What component can be used to subscribe to theme change events?",
+            "options": [
+                "useState",
+                "EventEmitter",
+                "useEffect",
+                "useTheme"
+            ],
+            "answer": "EventEmitter"
+        },
+        {
+            "id": 111,
+            "question": "What is the purpose of the SharedPreferences API in Android Native Modules?",
+            "options": [
+                "To manage screen layouts",
+                "To store app theme preferences",
+                "To handle network requests",
+                "To handle push notifications"
+            ],
+            "answer": "To store app theme preferences"
+        },
+        {
+            "id": 112,
+            "question": "What happens when the theme is not fetched after setting a new one?",
+            "options": [
+                "The app continues to show the old theme",
+                "The app crashes",
+                "The app loads slowly",
+                "The layout breaks"
+            ],
+            "answer": "The app continues to show the old theme"
+        },
+        {
+            "id": 113,
+            "question": "What programming languages can be used to create Native Modules?",
+            "options": [
+                "HTML and CSS",
+                "Objective-C, Swift, Java, C++",
+                "Python and Ruby",
+                "PHP and SQL"
+            ],
+            "answer": "Objective-C, Swift, Java, C++"
+        },
+        {
+            "id": 114,
+            "question": "What does the EventEmitter API allow in JavaScript?",
+            "options": [
+                "To send HTTP requests",
+                "To subscribe to events",
+                "To store data",
+                "To manage state"
+            ],
+            "answer": "To subscribe to events"
+        },
+        {
+            "id": 115,
+            "question": "What happens when the app is restarted after setting a theme?",
+            "options": [
+                "The theme resets",
+                "The theme persists",
+                "The theme changes randomly",
+                "The app crashes"
+            ],
+            "answer": "The theme persists"
+        },
+        {
+            "id": 116,
+            "question": "Which module is used in the example project to store the theme value?",
+            "options": [
+                "React Context",
+                "UserDefaults (iOS) and SharedPreferences (Android)",
+                "AsyncStorage",
+                "Expo SDK"
+            ],
+            "answer": "UserDefaults (iOS) and SharedPreferences (Android)"
+        },
+        {
+            "id": 117,
+            "question": "How does the Native Module system expose native classes to JavaScript?",
+            "options": [
+                "By converting to HTML",
+                "As CSS properties",
+                "As JavaScript objects",
+                "Through React hooks"
+            ],
+            "answer": "As JavaScript objects"
+        },
+        {
+            "id": 118,
+            "question": "How do you access native APIs not available in JavaScript?",
+            "options": [
+                "By creating a new React component",
+                "By using Native Modules",
+                "By adding HTML elements",
+                "By writing JSX code"
+            ],
+            "answer": "By using Native Modules"
+        },
+        {
+            "id": 119,
+            "question": "How can you initialize a new Native Module?",
+            "options": [
+                "Using the expo-settings package",
+                "Using Expo Storage",
+                "Using UserDefaults only",
+                "By creating a new object"
+            ],
+            "answer": "By creating a new object"
+        },
+        {
+            "id": 120,
+            "question": "How do Native Modules improve performance?",
+            "options": [
+                "By running natively",
+                "By using Expo",
+                "By running in the browser",
+                "By using Redux"
+            ],
+            "answer": "By running natively"
+        },
+        {
+            "id": 121,
+            "question": "How do you update the theme value in the Native Module?",
+            "options": [
+                "By calling the setTheme() function",
+                "By modifying the HTML file",
+                "By restarting the app",
+                "By using Redux"
+            ],
+            "answer": "By calling the setTheme() function"
+        },
+        {
+            "id": 122,
+            "question": "How is the theme persisted in Native Modules?",
+            "options": [
+                "By using persistent storage APIs",
+                "By using temporary storage",
+                "By sending the theme to the server",
+                "By storing the theme in state"
+            ],
+            "answer": "By using persistent storage APIs"
+        },
+        {
+            "id": 123,
+            "question": "What does the getTheme() function do in the example Native Module app?",
+            "options": [
+                "Sets the theme",
+                "Retrieves the current theme",
+                "Changes the layout",
+                "Opens the settings page"
+            ],
+            "answer": "Retrieves the current theme"
+        },
+        {
+            "id": 124,
+            "question": "What prop is used to provide a dark or light mode in Native Modules?",
+            "options": [
+                "mode",
+                "colorMode",
+                "themeMode",
+                "displayMode"
+            ],
+            "answer": "colorMode"
+        },
+        {
+            "id": 125,
+            "question": "What event is emitted when the theme changes?",
+            "options": [
+                "themeChange",
+                "themeUpdate",
+                "onThemeChange",
+                "ThemeModified"
+            ],
+            "answer": "themeChange"
+        },
+        {
+            "id": 126,
+            "question": "What is a key benefit of using Native Modules?",
+            "options": [
+                "They are faster than JavaScript",
+                "They are written in JSX",
+                "They only work on iOS",
+                "They remove the need for Expo"
+            ],
+            "answer": "They are faster than JavaScript"
+        },
+        {
+            "id": 127,
+            "question": "Which API is used to store persistent data on Android in Native Modules?",
+            "options": [
+                "UserDefaults",
+                "AsyncStorage",
+                "SharedPreferences",
+                "React Storage"
+            ],
+            "answer": "SharedPreferences"
+        },
+        {
+            "id": 128,
+            "question": "How do you ensure that the theme value is persisted in the example app?",
+            "options": [
+                "By fetching the new value on change",
+                "By resetting the app state",
+                "By writing the value to a local file",
+                "By removing old themes"
+            ],
+            "answer": "By fetching the new value on change"
+        },
+        {
+            "id": 129,
+            "question": "What tool allows communication between JavaScript and native code?",
+            "options": [
+                "Redux",
+                "Native Module system",
+                "TypeScript",
+                "React Router"
+            ],
+            "answer": "Native Module system"
+        },
+        {
+            "id": 130,
+            "question": "How can developers react to changes in the theme value in Native Modules?",
+            "options": [
+                "By using change events",
+                "By modifying state directly",
+                "By using a CSS class",
+                "By overriding the style component"
+            ],
+            "answer": "By using change events"
+        },
+        {
+            "id": 131,
+            "question": "What is a Native Module?",
+            "options": [
+                "A library for routing",
+                "A set of JavaScript functions",
+                "A CSS framework",
+                "A new React Native component"
+            ],
+            "answer": "A set of JavaScript functions"
+        },
+        {
+            "id": 132,
+            "question": "How do you run the TypeScript compiler in a Native Module project?",
+            "options": [
+                "npm start",
+                "tsc --watch",
+                "expo run",
+                "yarn tsc start"
+            ],
+            "answer": "tsc --watch"
+        },
+        {
+            "id": 133,
+            "question": "Which command runs the Android Native Module project?",
+            "options": [
+                "npx expo run:android",
+                "npm run:android",
+                "yarn android:start",
+                "npm expo run:android"
+            ],
+            "answer": "npx expo run:android"
+        },
+        {
+            "id": 134,
+            "question": "Which API is used on Android to store user preferences in Native Modules?",
+            "options": [
+                "LocalStorage",
+                "AsyncStorage",
+                "SharedPreferences",
+                "Redux"
+            ],
+            "answer": "SharedPreferences"
+        },
+        {
+            "id": 135,
+            "question": "What file type is replaced with minimal boilerplate during setup?",
+            "options": [
+                ".ts",
+                ".html",
+                ".jsx",
+                ".css"
+            ],
+            "answer": ".ts"
+        },
+        {
+            "id": 136,
+            "question": "What is the first step in creating a Native Module?",
+            "options": [
+                "Setting up a new app theme",
+                "Initializing a new module",
+                "Running the React CLI",
+                "Writing the first unit test"
+            ],
+            "answer": "Initializing a new module"
+        },
+        {
+            "id": 137,
+            "question": "What API is used to detect theme changes in JavaScript?",
+            "options": [
+                "EventEmitter",
+                "useEffect",
+                "setTimeout",
+                "useState"
+            ],
+            "answer": "EventEmitter"
+        },
+        {
+            "id": 138,
+            "question": "Which method is used to emit an event in an Android Native Module?",
+            "options": [
+                "triggerEvent()",
+                "sendEvent()",
+                "onEmit()",
+                "sendAndroidEvent()"
+            ],
+            "answer": "sendEvent()"
+        },
+        {
+            "id": 139,
+            "question": "What is the final step in creating a Native Module for Android and iOS?",
+            "options": [
+                "Exporting the module",
+                "Testing the UI",
+                "Writing unit tests",
+                "Subscribing to API changes"
+            ],
+            "answer": "Exporting the module"
+        },
+        {
+            "id": 140,
+            "question": "What issue occurs when changing the theme in the example app?",
+            "options": [
+                "The app crashes",
+                "The theme doesn’t change immediately",
+                "The layout breaks",
+                "The app enters an infinite loop"
+            ],
+            "answer": "The theme doesn’t change immediately"
+        },
+        {
+            "id": 141,
+            "question": "Why are Native Modules needed?",
+            "options": [
+                "To increase styling options",
+                "To access platform-specific APIs",
+                "To replace JavaScript completely",
+                "To manage state"
+            ],
+            "answer": "To access platform-specific APIs"
+        },
+        {
+            "id": 142,
+            "question": "What API is used for iOS to store user preferences in Native Modules?",
+            "options": [
+                "SharedPreferences",
+                "UserDefaults",
+                "LocalStorage",
+                "SessionStorage"
+            ],
+            "answer": "UserDefaults"
+        },
+        {
+            "id": 143,
+            "question": "Which command is used to install a new Native Module package?",
+            "options": [
+                "npm install",
+                "npm init module",
+                "yarn create module",
+                "expo install module"
+            ],
+            "answer": "npm install"
+        },
+        {
+            "id": 144,
+            "question": "How do you emit an event in an iOS Native Module?",
+            "options": [
+                "Using sendEvent",
+                "Using dispatch()",
+                "Using notifyEvent()",
+                "Using postEvent()"
+            ],
+            "answer": "Using sendEvent"
+        },
+        {
+            "id": 145,
+            "question": "What storage system is used in the example Native Module app for the web?",
+            "options": [
+                "LocalStorage",
+                "React Storage",
+                "FileSystem",
+                "Redux"
+            ],
+            "answer": "LocalStorage"
+        },
+        {
+            "id": 146,
+            "question": "What API allows developers to store persistent preferences on iOS?",
+            "options": [
+                "SharedPreferences",
+                "UserDefaults",
+                "React Storage",
+                "LocalStorage"
+            ],
+            "answer": "UserDefaults"
+        },
+        {
+            "id": 147,
+            "question": "What function is used to set the theme on Android in Native Modules?",
+            "options": [
+                "SharedPreferences.putString()",
+                "setTheme()",
+                "UserDefaults.set()",
+                "AsyncStorage.saveTheme()"
+            ],
+            "answer": "SharedPreferences.putString()"
+        },
+        {
+            "id": 148,
+            "question": "Which platform uses the UserDefaults API?",
+            "options": [
+                "Android",
+                "iOS",
+                "Windows",
+                "Web"
+            ],
+            "answer": "iOS"
+        },
+        {
+            "id": 149,
+            "question": "How are native events emitted in iOS Native Modules?",
+            "options": [
+                "By using sendEvent()",
+                "By using dispatchEvent()",
+                "By using triggerEvent()",
+                "By using onEvent()"
+            ],
+            "answer": "By using sendEvent()"
+        },
+        {
+            "id": 150,
+            "question": "How is theme data read on Android in Native Modules?",
+            "options": [
+                "By using the read() function",
+                "By using the getSharedPreferences() method",
+                "By using Redux",
+                "By using React Context API"
+            ],
+            "answer": "By using the getSharedPreferences() method"
+        },
+        {
+            "id": 151,
+            "question": "How do you run the example Native Module project for iOS?",
+            "options": [
+                "npm start ios",
+                "npx expo run:ios",
+                "expo start",
+                "yarn ios start"
+            ],
+            "answer": "npx expo run:ios"
+        },
+        {
+            "id": 152,
+            "question": "Which tool is used to compile TypeScript files in a Native Module project?",
+            "options": [
+                "Webpack",
+                "Babel",
+                "TypeScript compiler",
+                "Expo"
+            ],
+            "answer": "TypeScript compiler"
+        },
+        {
+            "id": 153,
+            "question": "How can you re-render the app based on a new theme?",
+            "options": [
+                "By updating the state on theme change",
+                "By resetting the app manually",
+                "By modifying the HTML file",
+                "By restarting the device"
+            ],
+            "answer": "By updating the state on theme change"
+        },
+        {
+            "id": 154,
+            "question": "How can a Native Module be created for React Native?",
+            "options": [
+                "By adding HTML elements",
+                "By writing CSS classes",
+                "By creating a NPM package or directly within the project",
+                "By using Redux only"
+            ],
+            "answer": "By creating a NPM package or directly within the project"
+        },
+        {
+            "id": 155,
+            "question": "What tool is used to emit change events in a Native Module?",
+            "options": [
+                "Redux",
+                "EventEmitter",
+                "Context API",
+                "SharedPreferences"
+            ],
+            "answer": "EventEmitter"
+        },
+        {
+            "id": 156,
+            "question": "What is used to manage native events in JavaScript for Native Modules?",
+            "options": [
+                "EventEmitter",
+                "useState",
+                "useEffect",
+                "React Native Router"
+            ],
+            "answer": "EventEmitter"
+        },
+        {
+            "id": 157,
+            "question": "Which platforms do Native Modules target in React Native?",
+            "options": [
+                "Web only",
+                "Android and iOS",
+                "Windows",
+                "Linux"
+            ],
+            "answer": "Android and iOS"
+        }
+    ]
+}
