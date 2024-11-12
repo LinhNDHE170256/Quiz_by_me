@@ -6,24 +6,27 @@ function Quiz({ endSession }) {
     const [currentQuestion, setCurrentQuestion] = useState(0);  // Câu hỏi hiện tại
     const [selectedAnswer, setSelectedAnswer] = useState(null);  // Đáp án đã chọn
     const [wrongAnswers, setWrongAnswers] = useState(
-        JSON.parse(localStorage.getItem('wrongAnswers')) || []  // Câu hỏi sai lưu trữ từ localStorage
+        JSON.parse(localStorage.getItem('wrongAnswers')) || []  // Câu hỏi sai từ phiên trước
     );
     const [session, setSession] = useState(
         parseInt(localStorage.getItem('session')) || 1  // Phiên học hiện tại, mặc định là 1
     );
+    const [showWrongAnswers, setShowWrongAnswers] = useState(true); // Để hiển thị câu hỏi sai trước
 
-    // Lấy câu hỏi từ API
+    // Lấy câu hỏi từ API khi phiên học thay đổi
     useEffect(() => {
         fetchQuestions();
     }, [session]);
 
+    // Hàm lấy câu hỏi của phiên hiện tại
     const fetchQuestions = async () => {
         const response = await fetch('http://localhost:9999/questions');
         const data = await response.json();
-        const start = (session - 1) * 20;  // Lấy 20 câu từ phiên học tương ứng
+        const start = (session - 1) * 20;  // Lấy 20 câu của phiên học hiện tại
         const end = session * 20;
-        const currentQuestions = data.slice(start, end);  // Câu hỏi của phiên hiện tại
-        setQuestions([...wrongAnswers, ...currentQuestions]);  // Hiển thị câu sai từ lần trước và câu hỏi mới
+        const currentQuestions = data.slice(start, end);
+
+        setQuestions([...wrongAnswers, ...currentQuestions]);  // Câu hỏi sai trước, sau đó mới câu hỏi mới
     };
 
     // Xử lý khi người dùng chọn đáp án
@@ -32,7 +35,7 @@ function Quiz({ endSession }) {
         const current = questions[currentQuestion];
 
         if (option === current.answer) {
-            removeWrongAnswer(current);  // Xóa câu hỏi sai nếu trả lời đúng
+            removeWrongAnswer(current);  // Xóa câu sai nếu trả lời đúng
         } else {
             saveWrongAnswer(current);  // Lưu câu hỏi sai nếu trả lời sai
         }
@@ -45,20 +48,19 @@ function Quiz({ endSession }) {
     // Lưu câu hỏi sai vào localStorage (chỉ lưu lần đầu tiên)
     const saveWrongAnswer = (question) => {
         setWrongAnswers((prev) => {
-            // Kiểm tra xem câu hỏi đã có trong wrongAnswers chưa
             if (!prev.some(q => q.id === question.id)) {
                 const updated = [...prev, question];
                 localStorage.setItem('wrongAnswers', JSON.stringify(updated));
                 return updated;
             }
-            return prev;  // Nếu câu hỏi đã có, không thêm lại
+            return prev;  // Nếu đã có câu hỏi trong danh sách, không thêm lại
         });
     };
 
     // Xóa câu hỏi sai khỏi localStorage
     const removeWrongAnswer = (question) => {
         setWrongAnswers((prev) => {
-            const updated = prev.filter((q) => q.id !== question.id);  // Dùng id làm key
+            const updated = prev.filter((q) => q.id !== question.id);
             localStorage.setItem('wrongAnswers', JSON.stringify(updated));
             return updated;
         });
@@ -66,10 +68,9 @@ function Quiz({ endSession }) {
 
     // Chuyển sang câu hỏi tiếp theo
     const nextQuestion = () => {
-        // Đảm bảo cập nhật câu hỏi và không quay lại câu đã trả lời
         if (currentQuestion < questions.length - 1) {
             setCurrentQuestion(currentQuestion + 1);
-            setSelectedAnswer(null);  // Reset câu trả lời khi chuyển sang câu mới
+            setSelectedAnswer(null);  // Reset lựa chọn khi chuyển câu hỏi mới
         } else {
             endSessionPrompt();
         }
@@ -80,39 +81,33 @@ function Quiz({ endSession }) {
         const choice = window.confirm("Bạn có muốn học tiếp?");
         if (choice) {
             setSession(session + 1);  // Tăng số phiên
-            localStorage.setItem('session', session + 1);  // Lưu lại phiên tiếp theo vào localStorage
-            setCurrentQuestion(0);  // Bắt đầu lại câu hỏi
-            fetchQuestions();  // Tải lại câu hỏi mới từ API
+            localStorage.setItem('session', session + 1);
+            setCurrentQuestion(0);  // Bắt đầu lại từ câu hỏi đầu
+            setShowWrongAnswers(true);  // Đặt lại cờ để hiển thị câu sai
+            fetchQuestions();
         } else {
-            localStorage.removeItem('wrongAnswers');  // Xóa câu hỏi sai khi kết thúc
-            localStorage.removeItem('session');  // Xóa thông tin phiên học
-            endSession();  // Quay lại trang home hoặc kết thúc phiên học
+            localStorage.removeItem('wrongAnswers');
+            localStorage.removeItem('session');
+            endSession();  // Quay về trang chủ
         }
     };
 
-    // Xử lý việc chọn lớp button
+    // Xử lý lớp button
     const getButtonClass = (option) => {
-        if (selectedAnswer === null) {
-            return 'btn-primary';
-        }
+        if (selectedAnswer === null) return 'btn-primary';
         if (option === selectedAnswer) {
             return option === questions[currentQuestion].answer ? 'btn-success' : 'btn-danger';
         }
-        if (option === questions[currentQuestion].answer) {
-            return 'btn-success';
-        }
-        return 'btn-primary';
+        return option === questions[currentQuestion].answer ? 'btn-success' : 'btn-primary';
     };
 
     return (
         <Container style={{ maxWidth: '500px', border: '1px solid #ccc', padding: '20px', backgroundColor: 'white', borderRadius: '8px', marginTop: '20px' }}>
-            {/* Hiển thị thông báo nếu câu hỏi là câu sai */}
-            {wrongAnswers.some(q => q.id === questions[currentQuestion]?.id) && (
+            {wrongAnswers.some(q => q.id === questions[currentQuestion]?.id) && showWrongAnswers && (
                 <div style={{ color: 'red', marginBottom: '10px', fontWeight: 'bold' }}>
                     Trả lời lại câu sai
                 </div>
             )}
-            {/* Đánh số câu hỏi */}
             <h5 style={{ textAlign: 'left', marginBottom: '20px' }}>
                 Câu {questions[currentQuestion]?.id}: {questions[currentQuestion]?.question}
             </h5>
@@ -167,7 +162,6 @@ function Quiz({ endSession }) {
                     </Row>
                 </Col>
             </Row>
-            {/* Nút Next */}
             <button
                 className="btn btn-info"
                 style={{ marginTop: '20px' }}
